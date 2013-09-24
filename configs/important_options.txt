@@ -1,0 +1,59 @@
+
+1) To redirecting:
+
+CURLOPT_AUTOREFERER
+TRUE to automatically set the Referer: field in requests where it follows a Location: redirect. 
+
+CURLOPT_FOLLOWLOCATION
+TRUE to follow any "Location: " header that the server sends as part of the HTTP header (note this is recursive, PHP will follow as many "Location: " headers that it is sent, unless CURLOPT_MAXREDIRS is set). 
+
+CURLOPT_UNRESTRICTED_AUTH
+TRUE to keep sending the username and password when following locations (using CURLOPT_FOLLOWLOCATION), even when the hostname has changed. 
+
+2) To cookies:
+
+CURLOPT_COOKIESESSION
+TRUE to mark this as a new cookie "session". It will force libcurl to ignore all cookies it is about to load that are "session cookies" from the previous session. By default, libcurl always stores and loads all cookies, independent if they are session cookies or not. Session cookies are cookies without expiry date and they are meant to be alive and existing for this "session" only. 
+
+3) Strange, Attention
+
+CURLOPT_FORBID_REUSE
+CURLOPT_FRESH_CONNECT
+
+CURLOPT_HTTPPROXYTUNNEL
+CURLOPT_PROXY
+CURLOPT_PROXYAUTH
+CURLOPT_PROXYUSERPWD
+
+CURLINFO_HEADER_OUT
+
+CURLOPT_CAPATH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
